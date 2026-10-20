@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Diseño Centrado en el Usuario - WikiDesign</title>
+    <!-- TemplateEndEditable -->
+    <!-- IMPORTACIÓN DE FUENTES DEL MANUAL -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@500;700;900&family=Nunito+Sans:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- VINCULACIÓN DE LA HOJA DE ESTILOS EXTERNA -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- LIBRERÍA LOTTIE WEB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR INTELIGENTE -->
+    <nav class="barra-superior" id="barraSuperior">
+        <div class="logo">
+            <img src="img/logo2.webp" alt="Logo de WikiDesign" style="height: 40px; width: 180px; object-fit: fill;">
+        </div>
+        
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#colabora">COLABORA</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+
+        <div class="buscador">
+            Buscar
+        </div>
+    </nav>
+
+    <!-- CABECERA PRINCIPAL (HERO) -->
+    <header id="inicio">
+        <h1>DISEÑO CENTRADO EN EL USUARIO</h1>
+        <p>Descubre qué es el Diseño Centrado en el Usuario (DCU) y por qué es el secreto detrás de los productos digitales que realmente amamos usar.</p>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL A DOS COLUMNAS -->
+    <div class="contenedor-pagina">
+        
+        <!-- COLUMNA IZQUIERDA: MENÚ LATERAL DESLIZANTE -->
+        <aside class="menu-lateral" id="menuLateral">
+            <div class="contenido-menu-desplegable">
+                <div class="bloque-temas">
+                    <div class="pestana-temas">TEMAS</div>
+                    <h4>TEMAS</h4>
+                    <ul>
+                        <li><a href="#problema">INTRODUCCIÓN</a></li>
+                        <li><a href="#empatizar">EMPATIZAR</a></li>
+                        <li><a href="#definir">DEFINIR</a></li>
+                        <li><a href="#idear">IDEAR</a></li>
+                        <li><a href="#prototipar">PROTOTIPAR</a></li>
+                        <li><a href="#evaluar">EVALUAR</a></li>
+                    </ul>
+                </div>
+
+                <div class="bloque-sumario">
+                    <div class="pestana-sumario">SUMARIO</div>
+                    <h4>SUMARIO</h4>
+                    <p class="subtitulo-sumario">Experiencia de usuario - P1</p>
+                    <ul>
+                        <li><a href="#empatizar-detalles">1. EMPATIZAR</a></li>
+                        <li><a href="#definir-detalles">2. DEFINIR</a></li>
+                        <li><a href="#idear-detalles">3. IDEAR</a></li>
+                        <li><a href="#prototipar-detalles">4. PROTOTIPAR</a></li>
+                        <li><a href="#evaluar-detalles">5. EVALUAR</a></li>
+                    </ul>
+                </div>
+            </div>
+        </aside>
+
+        <!-- COLUMNA DERECHA: TARJETAS DE CONTENIDO -->
+        <main class="contenido-derecho">
+            
+            <!-- TARJETA 1: INTRODUCCIÓN CON ANIMACIÓN LOTTIE -->
+            <div id="problema" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h2>¿Alguna vez te has perdido en una página web?</h2>
+                        <p>Eso sucede cuando el diseño se basa en suposiciones, no en personas. El resultado es frustración, abandono y un producto que nadie quiere usar. Construir a ciegas e ignorar al usuario es el camino más rápido al fracaso digital.</p>
+                    </div>
+                </div>
+                <div class="caja-imagen">
+                    <div id="animacion-confused" style="width: 100%; height: 100%; min-height: 220px;"></div>
+                </div>
+            </div>
+
+            <!-- CAJA 2: TEXTO INTRODUCTORIO DE TRANSICIÓN -->
+            <div class="caja-transicion">
+                <p style="margin: 0;">
+                    Para evitar un mal diseño y garantizar una experiencia verdaderamente útil, podemos basarnos en las siguientes fases metodológicas:
+                </p>
+            </div>
+
+            <!-- CAJA 3: VIDEO DE YOUTUBE -->
+            <div class="caja-video">
+                <h3 style="margin-bottom: 15px; font-size: 22px;">Video Explicativo</h3>
+                
+                <div class="video-contenedor">
+                    <iframe src="https://www.youtube-nocookie.com/embed/RlsErkJmub8?enablejsapi=1&origin=*" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+
+                <div style="margin-top: 20px; text-align: center;">
+                    <a href="https://www.youtube.com/watch?v=RlsErkJmub8" target="_blank" class="btn-ver-mas" style="background-color: #9286D9; color: #1A1C40; display: inline-block;">▶ Ver video directamente en YouTube</a>
+                </div>
+            </div>
+
+            <!-- DEFINICIÓN PRINCIPAL DEL DCU -->
+            <div class="fila-tarjetas">
+                <div class="caja-texto-gris" style="width: 100%;">
+                    <div>
+                        <h3>Definición</h3>
+                        <p>El diseño centrado en el usuario (DCU, también conocido en inglés como <em>human-centred design</em>) es una filosofía que pone al usuario y sus necesidades e intereses en el centro del proceso de diseño del producto u objeto, desde su concepción y durante su desarrollo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 25px;">Las 5 fases del DCU</h2>
+
+            <!-- TARJETA 4: EMPATIZAR -->
+            <div id="empatizar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Empatizar</h3>
+                        <p>Ponte en sus zapatos. Investiga a fondo quiénes son tus usuarios, qué necesitan en su día a día y qué obstáculos enfrentan antes de proponer cualquier solución.</p>
+                    </div>
+                    <a href="#empatizar-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/empathy.jpg" alt="Fase Empatizar">
+                </div>
+            </div>
+
+            <!-- TARJETA 5: DEFINIR -->
+            <div id="definir" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Definir</h3>
+                        <p>Encuentra el problema real. Filtra toda la información recolectada durante la investigación para plantear exactamente qué necesidades vas a resolver.</p>
+                    </div>
+                    <a href="#definir-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Definir.jpg" alt="Fase Definir">
+                </div>
+            </div>
+
+            <!-- TARJETA 6: IDEAR -->
+            <div id="idear" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Idear</h3>
+                        <p>Imagina las soluciones. Es el momento de realizar lluvias de ideas sin filtros ni límites; en esta etapa ninguna propuesta creativa es mala.</p>
+                    </div>
+                    <a href="#idear-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Idear.webp" alt="Fase Idear">
+                </div>
+            </div>
+
+            <!-- TARJETA 7: PROTOTIPAR -->
+            <div id="prototipar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Prototipar</h3>
+                        <p>Hazlo tangible. Crea versiones rápidas, económicas y de baja fidelidad de tus ideas principales para ver cómo funcionarían en la práctica.</p>
+                    </div>
+                    <a href="#prototipar-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Prototipar.webp" alt="Fase Prototipar">
+                </div>
+            </div>
+
+            <!-- TARJETA 8: EVALUAR -->
+            <div id="evaluar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Evaluar</h3>
+                        <p>Prueba y aprende. Pon tu prototipo directamente en las manos de usuarios reales, observa en qué puntos se confunden y corrige errores a tiempo.</p>
+                    </div>
+                    <a href="#evaluar-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Evaluar.webp" alt="Fase Evaluar">
+                </div>
+            </div>
+
+            <!-- SECCIÓN DETALLADA: 4 ELEMENTOS EN LÍNEA CON BOTONES ENLAZADOS -->
+            <hr style="border: 1px solid #57568C; margin: 50px 0 30px 0;">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #7D8C46;">Detalle de Subtemas y Fases</h2>
+
+            <!-- LÍNEA 1: EMPATIZAR Y DEFINIR -->
+            <div id="empatizar-detalles" class="fila-cuatro-columnas">
+                <div class="caja-texto-compacto">
+                    <div>
+                        <h3>1. Empatizar</h3>
+                        <p>En el ámbito del DCU y la experiencia de usuario (UX), la empatía va mucho más allá de una simple suposición; se define como la capacidad metodológica y cognitiva de suspender nuestros propios sesgos y modelos mentales para comprender profundamente la realidad, el contexto físico, las necesidades cotidianas y las emociones genuinas del usuario final al interactuar con su entorno.</p>
+                    </div>
+                    <a href="https://paubenabarre.com/empatizar-con-el-usuario/" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/empatia.jpeg" alt="Detalle Empatizar">
+                </div>
+                <div class="caja-texto-compacto" id="definir-detalles">
+                    <div>
+                        <h3>2. Definir</h3>
+                        <p>En la fase analítica, la empatía actúa como un instrumento metodológico clave para decodificar el comportamiento humano. Su propósito fundamental es estructurar los hallazgos cualitativos y transformar los problemas detectados en oportunidades claras de innovación, usabilidad y mejora continua dentro de la arquitectura del proyecto digital.</p>
+                    </div>
+                    <a href="https://aprendix.org/usuario-que-significa/" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/definir.webp" alt="Detalle Definir">
+                </div>
+            </div>
+
+            <!-- LÍNEA 2: IDEAR Y PROTOTIPAR -->
+            <div class="fila-cuatro-columnas">
+                <div class="caja-texto-compacto" id="idear-detalles">
+                    <div>
+                        <h3>3. Idear</h3>
+                        <p>La ideación empática es la fase creativa donde los insights, dolores y expectativas descubiertos durante la investigación profunda se traducen en soluciones tangibles. Utiliza la empatía como un filtro estricto de viabilidad humana para asegurar que cada concepto responda estrictamente a la realidad de la persona.</p>
+                    </div>
+                    <a href="https://www.izo.es/blog/design-thinking-innovacion-centrada-en-el-usuario" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/idear.jpg" alt="Detalle Idear">
+                </div>
+                <div class="caja-texto-compacto" id="prototipar-detalles">
+                    <div>
+                        <h3>4. Prototipar</h3>
+                        <p>La prototipación empática consiste en la materialización rápida y de bajo costo de las ideas concebidas, con el único propósito de ponerlas frente al usuario para observar sus reacciones espontáneas, validar supuestos de diseño y medir el impacto real de la solución en su contexto diario sin desarrollos complejos.</p>
+                    </div>
+                    <a href="https://www.justinmind.com/es/creacion-de-prototipos" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/Prototipar.webp" alt="Detalle Prototipar">
+                </div>
+            </div>
+
+            <!-- LÍNEA 3: EVALUAR -->
+            <div class="fila-cuatro-columnas" id="evaluar-detalles">
+                <div class="caja-texto-compacto">
+                    <div>
+                        <h3>5. Evaluar</h3>
+                        <p>La evaluación empática representa la instancia crítica de análisis donde se observa y mide de cerca el desempeño, el nivel de satisfacción y la reacción emocional del usuario frente a una solución ya implementada, priorizando siempre su experiencia subjetiva para detectar fricciones ocultas y asegurar el éxito del producto.</p>
+                    </div>
+                    <a href="https://fastercapital.com/es/contenido/Evaluacion-de-la-experiencia-del-usuario--metodos-y-herramientas-de-evaluacion-de-la-experiencia-del-usuario.html" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/Evaluar.webp" alt="Detalle Evaluar">
+                </div>
+                <div style="width: 24%;"></div>
+                <div style="width: 24%;"></div>
+            </div>
+            
+            <aside class="importa">
+                <h2>¿Por qué te debe importar?</h2>
+                <p>Aplicar el DCU no es un requisito exclusivo para diseñadores. Es una mentalidad estratégica. Ya sea que estés creando un sitio web, un software o un negocio, poner al usuario en el centro te ahorra semanas de retrabajo y garantiza que tu esfuerzo construya algo que la gente realmente necesite.</p>
+            </aside>
+
+            <div class="caja-imagen-inferior">
+                <h3 style="margin-bottom: 15px; font-size: 22px; color: #7D8C46;">Infografía o Resumen</h3>
+                <img src="img/1.webp" alt="Imagen informativa de cierre">
+            </div>
+
+        </main>
+    </div>
+
+    <!-- SCRIPTS DE LOTTIE, MENÚ LATERAL Y BARRA SUPERIOR INTELIGENTE -->
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('animacion-confused'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json'
+        });
+
+        // 1. Control del menú lateral deslizante
+        const menu = document.getElementById('menuLateral');
+        
+        setTimeout(() => {
+            menu.classList.add('menu-oculto');
+        }, 5000);
+
+        menu.addEventListener('mouseenter', () => {
+            menu.classList.remove('menu-oculto');
+        });
+
+        menu.addEventListener('mouseleave', () => {
+            menu.classList.add('menu-oculto');
+        });
+
+        // 2. Control inteligente de la barra superior según el scroll
+        let ultimoScroll = 0;
+        const barraSuperior = document.getElementById('barraSuperior');
+
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+
+            if (scrollActual <= 10) {
+                // Si estamos arriba del todo, mostramos la barra normalmente
+                barraSuperior.classList.remove('barra-oculta');
+                return;
+            }
+
+            if (scrollActual > ultimoScroll) {
+                // Scroll hacia ABAJO -> Ocultar barra
+                barraSuperior.classList.add('barra-oculta');
+            } else {
+                // Scroll hacia ARRIBA -> Mostrar barra flotante
+                barraSuperior.classList.remove('barra-oculta');
+            }
+            ultimoScroll = scrollActual <= 0 ? 0 : scrollActual;
+        });
+    </script>
+    
+    <footer>
+        <p>© 2026 Wiki Design. Todos los derechos reservados. El contenido de este sitio ha sido desarrollado con fines educativos y académicos.</p>
+    </footer>
+</body>
+</html>
