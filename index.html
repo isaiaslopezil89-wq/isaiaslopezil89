@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Diseño Centrado en el Usuario - WikiDesign</title>
+    
+    <!-- IMPORTACIÓN DE FUENTES DEL MANUAL -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@500;700;900&family=Nunito+Sans:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- VINCULACIÓN DE LA HOJA DE ESTILOS EXTERNA -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <header class="barra-superior">
+        <a class="marca" href="index.html" aria-label="WikiDesign, ir al inicio">
+            <img src="assets/logo-principal.png" alt="WikiDesign" style="height: 40px; width: 180px; object-fit: fill;">
+        </a>
+        
+        <nav aria-label="Navegación principal">
+            <a href="https://uvmwiki.dreamhosters.com/index.html">INICIO</a>
+            <a href="https://uvmwiki.dreamhosters.com/colabora/">COLABORA</a>
+            <a href="https://uvmwiki.dreamhosters.com/nosotros/">ACERCA DE NOSOTROS</a>
+        </nav>
+
+        <form class="buscador" role="search" action="#">
+            <label for="buscar">Buscar en la wiki</label>
+            <button type="submit" aria-label="Buscar">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                <path d="m16 16 4.5 4.5"></path>
+              </svg>
+            </button>
+            <input type="search" id="buscar" aria-label="Buscar" placeholder="Buscar">
+        </form>
+    </header>
+
+    <!-- MENÚ LATERAL IZQUIERDO -->
+    <aside class="sidebar" aria-label="Menú de temas">
+      <details class="panel-menu temas" open>
+        <summary>Temas</summary>
+        <nav aria-label="Temas">
+          <ul>
+            <!-- Experiencia de usuario -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/experiencia-usuario.png" alt="">
+                <span>Experiencia de usuario</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://danabiu.github.io/wiki-experiencia-usuario/" target="_blank" rel="noopener">Pareja 33 · Daniel Valdez y María Fernanda Damián</a></li>
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp25/" target="_blank" rel="noopener">Pareja 25 · Ximena Rangel y José Ramos</a></li>
+                <li><a href="https://jolly-moonbeam-e27fb1.netlify.app" target="_blank" rel="noopener">Pareja 1 · Edson Mendez y Adriana Salas</a></li>
+                <li><a href="https://doniheeho.github.io/Wiki-UX/" target="_blank" rel="noopener">Pareja 9 · Donovan Frabritcio Gonzalez Carrasco y Cinnthya Valeria Gomez Guerrero</a></li>
+                <li><a href="https://marcoantoniolunaj-debug.github.io/experiencia-usuario-ux/" target="_blank" rel="noopener">Pareja 17 · Jessica Leslie Loyo Camacho y Marco Antonio Luna Jiménez</a></li>
+                <li><a href="https://aaron-isai.github.io/wikidesign/" target="_blank" rel="noopener">Pareja 20 · Aaron Isai Martinez Perez y Katerine Susana Mata Berardi</a></li>
+              </ul>
+            </li>
+
+            <!-- Diseño web -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/diseno-web.png" alt="">
+                <span>Diseño web</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://wikidigitaldigitaldesign.netlify.app" target="_blank" rel="noopener">Pareja 24 · Andrea Ogando y Jair Pérez</a></li>
+                <li><a href="https://hcastillo2118-collab.github.io/hcastillo2118.github.io/" target="_blank" rel="noopener">Pareja 2 · Hugo Norberto Castillo y Rodrigo Chávez</a></li>
+                <li><a href="https://magical-dolphin-78c22a.netlify.app" target="_blank" rel="noopener">Pareja 10 · Alexa Liliana Garcia y Paola Vega</a></li>
+                <li><a href="https://leonardoradyfik-code.github.io/diseno-web-uvm/" target="_blank" rel="noopener">Equipo 18 · Paulina Maldonado y Leonardo Magaña</a></li>
+              </ul>
+            </li>
+
+            <!-- Design thinking -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/design-thinking.png" alt="">
+                <span>Design thinking</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp27/" target="_blank" rel="noopener">Pareja 27 · Andrea Salas y Mónica Sánchez</a></li>
+                <li><a href="https://blaskez.github.io/design-thinking/#" target="_blank" rel="noopener">Pareja 3 · Giovanna Cisneros y Talia Fernández</a></li>
+                <li><a href="https://alanjosue904-art.github.io/design-thinking/" target="_blank" rel="noopener">Pareja 11 · Frida Guadalupe Gomez y Alan Josue Gonzalez</a></li>
+                <li><a href="https://martinezbcaro-code.github.io/wiki-design-thinking-uvm/" target="_blank" rel="noopener">Equipo 19 · Daniella Carolina Martínez y Flor Paulina Mares</a></li>
+              </ul>
+            </li>
+
+            <!-- Diseño centrado en el usuario -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/diseno-centrado-usuario.png" alt="">
+                <span>Diseño centrado en el usuario</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://wikipareja28.github.io/A9_PAREJA28-/" target="_blank" rel="noopener">Pareja 28 · Estefanía Sánchez y Helios Serrato</a></li>
+                <li><a href="https://isaiaslopezil89-wq.github.io/isaiaslopezil89/" target="_blank" rel="noopener">Pareja 4 · Raúl Isaias Dominguez y Dulce Andrea Escobar</a></li>
+                <li><a href="https://wikiuvm10.github.io/WikiDesign/" target="_blank" rel="noopener">Pareja 12 · Sharon Nicole Gonzalez y María Yaravith Gonzalez</a></li>
+              </ul>
+            </li>
+
+            <!-- Diseño de interacción -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/diseno-interaccion.png" alt="">
+                <span>Diseño de interacción</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://elizabethvzago.github.io/WikidesignMariayEli-dis-interaccion/" target="_blank" rel="noopener">Pareja 29 · María Velarde y Elizabeth Vázquez</a></li>
+                <li><a href="https://kassy26-lab.github.io/Dise-o-de-interaccion-wikidesing/" target="_blank" rel="noopener">Pareja 13 · Kassandra Sbeydy Gónzalez y María Gabrielle Gónzalez</a></li>
+                <li><a href="https://mana13132-glitch.github.io/equipo21/" target="_blank" rel="noopener">Pareja 21 · Mariana Mendoza y Annette Jamilete Mendez</a></li>
+              </ul>
+            </li>
+
+            <!-- Arquitectura de la información -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/arquitectura-informacion.png" alt="">
+                <span>Arquitectura de la información</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp22/" target="_blank" rel="noopener">Pareja 22 · María Alejandra Mata y Priscila Eleonor Roseyon</a></li>
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp30/" target="_blank" rel="noopener">Pareja 30 · Rosalba Velarde y Olaf Viana</a></li>
+                <li><a href="https://illustrious-quokka-0b0db5.netlify.app" target="_blank" rel="noopener">Pareja 14 · Margarita Monserrat Guerra y Miguel Salvador Hernández</a></li>
+                <li><a href="https://ayudawikiuvm.freehosting.dev/?utm_source=chatgpt.com" target="_blank" rel="noopener">Pareja 6 · Yesenia Galván y Diego Armando Flores</a></li>
+              </ul>
+            </li>
+
+            <!-- Diseño de navegación -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/diseno-navegacion.png" alt="">
+                <span>Diseño de navegación</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp23/" target="_blank" rel="noopener">Pareja 23 · Eric Mora</a></li>
+                <li><a href="https://camaradabdn6.github.io/wiki_dise-o_navegacion_pareja15/#" target="_blank" rel="noopener">Pareja 15 · Alondra Ketzally Herrera y Ricardo Herrera</a></li>
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp31/" target="_blank" rel="noopener">Pareja 31 · Ignacio Vizuet y Alejandro Wong</a></li>
+                <li><a href="https://disenodenavegacion.infinityfree.io/?i=1" target="_blank" rel="noopener">Pareja 7 · Crystian Jannahi Garzon</a></li>
+              </ul>
+            </li>
+
+            <!-- Diseño visual -->
+            <li class="tema-item">
+              <button type="button" class="tema-boton" aria-haspopup="true" aria-expanded="false">
+                <img class="icono-tema" src="assets/icons/diseno-visual.png" alt="">
+                <span>Diseño visual</span>
+              </button>
+              <ul class="parejas">
+                <li><a href="https://uvmwiki.dreamhosters.com/eqp32/" target="_blank" rel="noopener">Pareja 32 · Susana Velázquez y Daniela Rebollar</a></li>
+                <li><a href="https://a940058038-collab.github.io/wikidesign-diseno-visual/" target="_blank" rel="noopener">Pareja 16 · Juan C. Lobo y Luis A. Ibarra</a></li>
+                <li><a href="https://dvp8.free.je" target="_blank" rel="noopener">Pareja 8 · Kelly Ariadne Gerardo y America Gaxiola</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </details>
+    </aside>
+
+    <!-- CONTENEDOR PRINCIPAL CON TODO EL CONTENIDO DCU -->
+    <div class="contenido">
+        <main class="contenido-derecho" style="width: 100%;">
+            <header id="inicio" style="margin-bottom: 40px;">
+                <h1>DISEÑO CENTRADO EN EL USUARIO</h1>
+                <p>Descubre qué es el Diseño Centrado en el Usuario (DCU) y por qué es el secreto detrás de los productos digitales que realmente amamos usar.</p>
+            </header>
+
+            <div id="problema" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h2>¿Alguna vez te has perdido en una página web?</h2>
+                        <p>Eso sucede cuando el diseño se basa en suposiciones, no en personas. El resultado es frustración, abandono y un producto que nadie quiere usar. Construir a ciegas e ignorar al usuario es el camino más rápido al fracaso digital.</p>
+                    </div>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/empathy.jpg" alt="Ilustración introductoria">
+                </div>
+            </div>
+
+            <div class="caja-transicion">
+                <p style="margin: 0;">Para evitar un mal diseño y garantizar una experiencia verdaderamente útil, podemos basarnos en las siguientes fases metodológicas:</p>
+            </div>
+
+            <div class="caja-video">
+                <h3 style="margin-bottom: 15px; font-size: 22px;">Video Explicativo</h3>
+                <div class="video-contenedor">
+                    <iframe src="https://www.youtube-nocookie.com/embed/RlsErkJmub8?enablejsapi=1&origin=*" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div style="margin-top: 20px; text-align: center;">
+                    <a href="https://www.youtube.com/watch?v=RlsErkJmub8" target="_blank" class="btn-ver-mas" style="background-color: #9286D9; color: #1A1C40; display: inline-block;">▶ Ver video directamente en YouTube</a>
+                </div>
+            </div>
+
+            <div class="fila-tarjetas">
+                <div class="caja-texto-gris" style="width: 100%;">
+                    <div>
+                        <h3>Definición</h3>
+                        <p>El diseño centrado en el usuario (DCU, también conocido en inglés como <em>human-centred design</em>) es una filosofía que pone al usuario y sus necesidades e intereses en el centro del proceso de diseño del producto u objeto, desde su concepción y durante su desarrollo.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 25px;">Las 5 fases del DCU</h2>
+
+            <div id="empatizar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Empatizar</h3>
+                        <p>Ponte en sus zapatos. Investiga a fondo quiénes son tus usuarios, qué necesitan en su día a día y qué obstáculos enfrentan antes de proponer cualquier solución.</p>
+                    </div>
+                    <a href="#empatizar-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/empathy.jpg" alt="Fase Empatizar">
+                </div>
+            </div>
+
+            <div id="definir" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Definir</h3>
+                        <p>Encuentra el problema real. Filtra toda la información recolectada durante la investigación para plantear exactamente qué necesidades vas a resolver.</p>
+                    </div>
+                    <a href="#definir-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Definir.jpg" alt="Fase Definir">
+                </div>
+            </div>
+
+            <div id="idear" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Idear</h3>
+                        <p>Imagina las soluciones. Es el momento de realizar lluvias de ideas sin filtros ni límites; en esta etapa ninguna propuesta creativa es mala.</p>
+                    </div>
+                    <a href="#idear-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Idear.webp" alt="Fase Idear">
+                </div>
+            </div>
+
+            <div id="prototipar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Prototipar</h3>
+                        <p>Hazlo tangible. Crea versiones rápidas, económicas y de baja fidelidad de tus ideas principales para ver cómo funcionarían en la práctica.</p>
+                    </div>
+                    <a href="#prototipar-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Prototipar.webp" alt="Fase Prototipar">
+                </div>
+            </div>
+
+            <div id="evaluar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Evaluar</h3>
+                        <p>Prueba y aprende. Pon tu prototipo directamente en las manos de usuarios reales, observa en qué puntos se confunden y corrige errores a tiempo.</p>
+                    </div>
+                    <a href="#evaluar-detalles" class="btn-ver-mas">Ver más</a>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/Evaluar.webp" alt="Fase Evaluar">
+                </div>
+            </div>
+
+            <hr style="border: 1px solid #57568C; margin: 50px 0 30px 0;">
+            <h2 style="text-align: center; margin-bottom: 30px; color: #7D8C46;">Detalle de Subtemas y Fases</h2>
+
+            <div id="empatizar-detalles" class="fila-cuatro-columnas">
+                <div class="caja-texto-compacto">
+                    <div>
+                        <h3>1. Empatizar</h3>
+                        <p>En el ámbito del DCU y la experiencia de usuario (UX), la empatía va mucho más allá de una simple suposición; se define como la capacidad metodológica y cognitiva de suspender nuestros propios sesgos y modelos mentales para comprender profundamente la realidad, el contexto físico, las necesidades cotidianas y las emociones genuinas del usuario final al interactuar con su entorno.</p>
+                    </div>
+                    <a href="https://paubenabarre.com/empatizar-con-el-usuario/" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/empatia.jpeg" alt="Detalle Empatizar">
+                </div>
+                <div class="caja-texto-compacto" id="definir-detalles">
+                    <div>
+                        <h3>2. Definir</h3>
+                        <p>En la fase analítica, la empatía actúa como un instrumento metodológico clave para decodificar el comportamiento humano. Su propósito fundamental es estructurar los hallazgos cualitativos y transformar los problemas detectados en oportunidades claras de innovación, usabilidad y mejora continua dentro de la arquitectura del proyecto digital.</p>
+                    </div>
+                    <a href="https://aprendix.org/usuario-que-significa/" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/definir.webp" alt="Detalle Definir">
+                </div>
+            </div>
+
+            <div class="fila-cuatro-columnas">
+                <div class="caja-texto-compacto" id="idear-detalles">
+                    <div>
+                        <h3>3. Idear</h3>
+                        <p>La ideación empática es la fase creativa donde los insights, dolores y expectativas descubiertos durante la investigación profunda se traducen en soluciones tangibles. Utiliza la empatía como un filtro estricto de viabilidad humana para asegurar que cada concepto responda estrictamente a la realidad de la persona.</p>
+                    </div>
+                    <a href="https://www.izo.es/blog/design-thinking-innovacion-centrada-en-el-usuario" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/idear.jpg" alt="Detalle Idear">
+                </div>
+                <div class="caja-texto-compacto" id="prototipar-detalles">
+                    <div>
+                        <h3>4. Prototipar</h3>
+                        <p>La prototipación empática consiste en la materialización rápida y de bajo costo de las ideas concebidas, con el único propósito de ponerlas frente al usuario para observar sus reacciones espontáneas, validar supuestos de diseño y medir el impacto real de la solución en su contexto diario sin desarrollos complejos.</p>
+                    </div>
+                    <a href="https://www.justinmind.com/es/creacion-de-prototipos" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/Prototipar.webp" alt="Detalle Prototipar">
+                </div>
+            </div>
+
+            <div class="fila-cuatro-columnas" id="evaluar-detalles">
+                <div class="caja-texto-compacto">
+                    <div>
+                        <h3>5. Evaluar</h3>
+                        <p>La evaluación empática representa la instancia crítica de análisis donde se observa y mide de cerca el desempeño, el nivel de satisfacción y la reacción emocional del usuario frente a una solución ya implementada, priorizando siempre su experiencia subjetiva para detectar fricciones ocultas y asegurar el éxito del producto.</p>
+                    </div>
+                    <a href="https://fastercapital.com/es/contenido/Evaluacion-de-la-experiencia-del-usuario--metodos-y-herramientas-de-evaluacion-de-la-experiencia-del-usuario.html" target="_blank" class="btn-conoce-mas">Conoce más</a>
+                </div>
+                <div class="caja-imagen-compacta">
+                    <img src="img/Evaluar.webp" alt="Detalle Evaluar">
+                </div>
+                <div style="width: 24%;"></div>
+                <div style="width: 24%;"></div>
+            </div>
+            
+            <aside class="importa">
+                <h2>¿Por qué te debe importar?</h2>
+                <p>Aplicar el DCU no es un requisito exclusivo para diseñadores. Es una mentalidad estratégica. Ya sea que estés creando un sitio web, un software o un negocio, poner al usuario en el centro te ahorra semanas de retrabajo y garantiza que tu esfuerzo construya algo que la gente realmente necesite.</p>
+            </aside>
+
+            <div class="caja-imagen-inferior">
+                <h3 style="margin-bottom: 15px; font-size: 22px; color: #7D8C46;">Infografía o Resumen</h3>
+                <img src="img/1.webp" alt="Imagen informativa de cierre">
+            </div>
+        </main>
+    </div>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer class="site-footer">
+        <a class="logo-pie" href="#inicio" aria-label="Volver al inicio de WikiDesign">
+          <img src="assets/logo-legal.png" alt="WikiDesign">
+        </a>
+        <div class="footer-copy">
+            <p class="copyright">© 2026 WikiDesign | Proyecto académico sin fines de lucro.</p>
+            <p>Sitio desarrollado por estudiantes de diferentes licenciaturas de la Universidad del Valle de México (UVM) con fines educativos y sin propósitos comerciales. Este proyecto es independiente y no representa oficialmente a la UVM. Los derechos de los recursos de terceros pertenecen a sus respectivos titulares.</p>
+        </div>
+    </footer>
+</body>
+</html>
