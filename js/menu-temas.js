@@ -1,9 +1,8 @@
 /* ============================================================
-   MENÚ DE TEMAS DE WIKIDESIGN · Comportamiento interactivo
+   MENÚ DE TEMAS Y SUMARIO · Comportamiento interactivo
    ============================================================ */
 (function () {
   function iniciar() {
-    // Control de clics táctiles en dispositivos móviles o pantallas pequeñas para desplegar submenús
     const botonesTema = document.querySelectorAll(".panel-menu.temas .tema-boton");
     
     botonesTema.forEach(function (b) {

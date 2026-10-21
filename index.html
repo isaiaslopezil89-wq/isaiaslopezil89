@@ -39,9 +39,11 @@
         </form>
     </header>
 
-    <!-- MENÚ LATERAL IZQUIERDO -->
-    <aside class="sidebar" aria-label="Menú de temas">
-      <details class="panel-menu temas" open>
+    <!-- MENÚ LATERAL IZQUIERDO (CON TEMAS Y SUMARIO) -->
+    <aside class="sidebar" aria-label="Menú lateral">
+      
+      <!-- PANEL 1: TEMAS -->
+      <details class="panel-menu temas">
         <summary>Temas</summary>
         <nav aria-label="Temas">
           <ul>
@@ -155,6 +157,23 @@
                 <li><a href="https://dvp8.free.je" target="_blank" rel="noopener">Pareja 8 · Kelly Ariadne Gerardo y America Gaxiola</a></li>
               </ul>
             </li>
+          </ul>
+        </nav>
+      </details>
+
+      <!-- PANEL 2: SUMARIO (ADAPTADO A LAS ETAPAS DEL DCU) -->
+      <details class="panel-menu sumario" open>
+        <summary>Sumario</summary>
+        <div class="subtitulo-sumario">Diseño centrado en el usuario</div>
+        <nav aria-label="Sumario">
+          <ul>
+            <li><a href="#inicio">¿Qué es el DCU?</a></li>
+            <li><a href="#empatizar">1. Empatizar</a></li>
+            <li><a href="#definir">2. Definir</a></li>
+            <li><a href="#idear">3. Idear</a></li>
+            <li><a href="#prototipar">4. Prototipar</a></li>
+            <li><a href="#evaluar">5. Evaluar</a></li>
+            <li><a href="#empatizar-detalles">Detalles de Fases</a></li>
           </ul>
         </nav>
       </details>
@@ -356,5 +375,8 @@
             <p>Sitio desarrollado por estudiantes de diferentes licenciaturas de la Universidad del Valle de México (UVM) con fines educativos y sin propósitos comerciales. Este proyecto es independiente y no representa oficialmente a la UVM. Los derechos de los recursos de terceros pertenecen a sus respectivos titulares.</p>
         </div>
     </footer>
+
+    <!-- SCRIPT DE INTERACCIÓN DEL MENÚ -->
+    <script src="js/menu-temas.js"></script>
 </body>
 </html>
