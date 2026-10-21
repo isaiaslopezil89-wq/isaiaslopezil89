@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Diseño Centrado en el Usuario - WikiDesign</title>
+    
+    <!-- IMPORTACIÓN DE FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;1,400&family=Montserrat:wght@500;700;900&family=Nunito+Sans:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- VINCULACIÓN DE LA HOJA DE ESTILOS EXTERNA -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- LIBRERÍA LOTTIE WEB -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <nav class="barra-superior" id="barraSuperior">
+        <div class="logo">
+            <a href="https://uvmwiki.dreamhosters.com/index.html">
+                <img src="img/logo2.webp" alt="Logo de WikiDesign" style="height: 40px; width: 180px; object-fit: fill;">
+            </a>
+        </div>
+        
+        <ul>
+            <li><a href="https://uvmwiki.dreamhosters.com/index.html">INICIO</a></li>
+            <li><a href="https://uvmwiki.dreamhosters.com/colabora/">COLABORA</a></li>
+            <li><a href="https://uvmwiki.dreamhosters.com/nosotros/">ACERCA DE NOSOTROS</a></li>
+        </ul>
+
+        <div class="buscador">
+            Buscar
+        </div>
+    </nav>
+
+    <!-- CABECERA PRINCIPAL (HERO) -->
+    <header id="inicio">
+        <h1>DISEÑO CENTRADO EN EL USUARIO</h1>
+        <p>Descubre qué es el Diseño Centrado en el Usuario (DCU) y por qué es el secreto detrás de los productos digitales que realmente amamos usar.</p>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL A DOS COLUMNAS -->
+    <div class="contenedor-pagina">
+        
+        <!-- ASIDE / SIDEBAR DONDE SE INYECTARÁ EL SCRIPT DE TEMAS -->
+        <aside class="sidebar">
+            <!-- El script inyectará automáticamente el contenido aquí -->
+        </aside>
+
+        <!-- COLUMNA DERECHA: TARJETAS DE CONTENIDO -->
+        <main class="contenido-derecho">
+            
+            <!-- TARJETA 1: INTRODUCCIÓN -->
+            <div id="problema" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h2>¿Alguna vez te has perdido en una página web?</h2>
+                        <p>Eso sucede cuando el diseño se basa en suposiciones, no en personas. El resultado es frustración, abandono y un producto que nadie quiere usar. Construir a ciegas e ignorar al usuario es el camino más rápido al fracaso digital.</p>
+                    </div>
+                </div>
+                <div class="caja-imagen">
+                    <div id="animacion-confused" style="width: 100%; height: 100%; min-height: 220px;"></div>
+                </div>
+            </div>
+
+            <!-- CAJA 2: TRANSICIÓN -->
+            <div class="caja-transicion">
+                <p style="margin: 0;">
+                    Para evitar un mal diseño y garantizar una experiencia verdaderamente útil, podemos basarnos en las siguientes fases metodológicas:
+                </p>
+            </div>
+
+            <!-- CAJA 3: VIDEO -->
+            <div class="caja-video">
+                <h3 style="margin-bottom: 15px; font-size: 22px;">Video Explicativo</h3>
+                <div class="video-contenedor">
+                    <iframe src="https://www.youtube-nocookie.com/embed/RlsErkJmub8?enablejsapi=1&origin=*" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <!-- DEFINICIÓN -->
+            <div class="fila-tarjetas">
+                <div class="caja-texto-gris" style="width: 100%;">
+                    <div>
+                        <h3>Definición</h3>
+                        <p>El diseño centrado en el usuario (DCU) es una filosofía que pone al usuario y sus necesidades en el centro del proceso de diseño.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 style="margin-bottom: 25px;">Las 5 fases del DCU</h2>
+
+            <!-- TARJETAS DE FASES -->
+            <div id="empatizar" class="fila-tarjetas">
+                <div class="caja-texto-gris">
+                    <div>
+                        <h3>Empatizar</h3>
+                        <p>Investiga a fondo quiénes son tus usuarios y qué obstáculos enfrentan antes de proponer soluciones.</p>
+                    </div>
+                </div>
+                <div class="caja-imagen">
+                    <img src="img/empathy.jpg" alt="Fase Empatizar">
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <!-- SCRIPT DE LOTTIE Y SCRIPT DEL MENÚ DE TEMAS -->
+    <script>
+        lottie.loadAnimation({
+            container: document.getElementById('animacion-confused'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://assets9.lottiefiles.com/packages/lf20_qp1q7mct.json'
+        });
+
+        // Control de barra superior al hacer scroll
+        let ultimoScroll = 0;
+        const barraSuperior = document.getElementById('barraSuperior');
+
+        window.addEventListener('scroll', () => {
+            let scrollActual = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollActual <= 10) {
+                barraSuperior.classList.remove('barra-oculta');
+                return;
+            }
+            if (scrollActual > ultimoScroll) {
+                barraSuperior.classList.add('barra-oculta');
+            } else {
+                barraSuperior.classList.remove('barra-oculta');
+            }
+            ultimoScroll = scrollActual <= 0 ? 0 : scrollActual;
+        });
+    </script>
+    
+    <!-- SCRIPT DEL MENÚ DE TEMAS EXTERNO -->
+    <script src="js/menu-temas.js"></script>
+
+    <footer>
+        <p>© 2026 Wiki Design. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

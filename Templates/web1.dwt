@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <!-- TemplateBeginEditable name="doctitle" -->
+    <title>Diseño Centrado en el Usuario - WikiDesign</title>
+    <!-- TemplateEndEditable -->
+    <!-- IMPORTACIÓN DE FUENTES DEL MANUAL (Montserrat, Open Sans, Nunito Sans, Lora) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400&family=Montserrat:ital,wght@0,500;0,700;0,900;1,500&family=Nunito+Sans:wght@400;600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <style>
+        /* =========================================
+           1. REGLAS GENERALES Y COLORES BASE 
+           Controla el color de fondo general de la página, la tipografía base y los márgenes iniciales.
+           ========================================= */
+        body {
+            background-color: #1A1C40; /* Azul oscuro principal */
+            color: #D9D9D9; /* Gris claro para el texto */
+            font-family: 'Open Sans', sans-serif; 
+            font-size: 16px;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* =========================================
+           2. REGLAS TIPOGRÁFICAS PARA TÍTULOS 
+           Define los tamaños, pesos y colores específicos para los encabezados (h1, h2, h3).
+           ========================================= */
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 55px; 
+            font-weight: 700; 
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 36px; 
+            font-weight: 700; 
+            color: #9286D9; /* Morado institucional */
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 28px; 
+            font-weight: 500; 
+            color: #7D8C46; /* Verde olivo */
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        header p {
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 600; 
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+        }
+
+        /* =========================================
+           3. NAVEGACIÓN SUPERIOR
+           Usa Flexbox para alinear el logo a la izquierda, los enlaces al centro y el buscador a la derecha.
+           ========================================= */
+        nav.barra-superior {
+            background-color: #D9D9D9; /* Fondo gris claro */
+            padding: 15px 40px;
+            width: 100%; 
+            box-sizing: border-box; 
+            display: flex; 
+            flex-direction: row;
+            justify-content: space-between; /* Separa los elementos hacia los extremos */
+            align-items: center; 
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none; 
+            display: flex; 
+            flex-direction: row;
+            gap: 40px; 
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 800; 
+            color: #1A1C40; /* Texto en azul oscuro */
+            text-decoration: none; 
+            letter-spacing: 0.03em;
+        }
+
+        nav a:hover {
+            color: #7D8C46; /* Efecto al pasar el cursor (Verde olivo) */
+        }
+
+        nav .buscador {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #1A1C40; 
+            border: 3px solid #1A1C40; 
+            padding: 8px 50px; 
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        /* =========================================
+           4. DISEÑO A DOS COLUMNAS (CONTENEDOR GENERAL)
+           Divide la interfaz principal en el menú lateral izquierdo y el contenido derecho.
+           ========================================= */
+        .contenedor-pagina {
+            display: flex;
+            flex-direction: row;
+            max-width: 1200px;
+            margin: 40px auto;
+            gap: 40px; 
+            padding: 0 20px;
+            align-items: flex-start; 
+        }
+
+        main.contenido-derecho {
+            flex-grow: 1; /* Toma todo el espacio restante a la derecha */
+            width: 100%;
+        }
+
+        aside.importa {
+            background-color: #0F1926; 
+            padding: 30px 40px;
+            border-radius: 10px;
+            margin-bottom: 40px;
+        }
+
+        /* =========================================
+           5. SISTEMA DE TARJETAS (TEXTO E IMAGEN INDEPENDIENTES)
+           Controla el ancho de cada caja por separado y las alinea codo a codo en paralelo.
+           ========================================= */
+        .fila-tarjetas {
+            display: flex;
+            flex-direction: row;
+            gap: 30px; 
+            margin-bottom: 40px;
+            align-items: stretch; /* Hace que ambas cajas compartan la misma altura visual */
+        }
+
+        /* Caja donde va el texto principal (puedes ajustar el width manualmente) */
+        .caja-texto {
+            background-color: #0F1926; 
+            padding: 30px;
+            border-radius: 10px;
+            width: 60%; 
+        }
+
+        /* Caja donde va la imagen (puedes ajustar el width manualmente) */
+        .caja-imagen {
+            background-color: #0F1926; 
+            padding: 30px;
+            border-radius: 10px;
+            width: 40%; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .caja-imagen img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* =========================================
+           6. MENÚ LATERAL IZQUIERDO (MÁS COMPACTO)
+           Controla el ancho reducido y los espacios internos (padding) de las cajas de Temas y Sumario.
+           ========================================= */
+        .menu-lateral {
+            width: 240px; /* Ancho angosto y compacto del menú */
+            flex-shrink: 0; 
+            display: flex;
+            flex-direction: column;
+            position: sticky; /* Mantiene el menú fijo en pantalla al hacer scroll */
+            top: 20px;
+        }
+
+        .bloque-temas {
+            background-color: #57568C; /* Morado secundario */
+            padding: 20px 15px; /* Espaciado interno reducido para hacerlo más pequeño */
+            border-radius: 20px 20px 0 40px; /* Curva estética inferior */
+            z-index: 2;
+        }
+
+        .bloque-sumario {
+            background-color: #0F1926; 
+            padding: 30px 15px 20px 15px; /* Espaciado interno compacto */
+            border-radius: 0 40px 20px 20px; /* Curva estética superior */
+            margin-top: -20px; /* Superposición para unir visualmente ambos bloques */
+            z-index: 1;
+        }
+
+        .menu-lateral h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 18px;
+            font-weight: 900;
+            color: #7D8C46; 
+            margin-top: 0;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .bloque-sumario p.subtitulo-sumario {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 12px;
+            color: #D9D9D9;
+            margin-top: -10px;
+            margin-bottom: 12px;
+        }
+
+        .menu-lateral ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu-lateral li {
+            margin-bottom: 10px; /* Espacio vertical más cercano entre los enlaces */
+        }
+
+        .menu-lateral a {
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 12px;
+            font-weight: 800;
+            color: #7D8C46; 
+            text-decoration: none;
+            text-transform: uppercase;
+            display: block;
+        }
+
+        .menu-lateral a:hover {
+            color: #D9D9D9; 
+        }
+
+        /* =========================================
+           7. PIE DE PÁGINA
+           ========================================= */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #0F1926;
+        }
+        
+        footer p {
+            font-family: 'Lora', serif;
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: 0.02em;
+            margin: 0;
+        }
+    </style>
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+    <!-- BARRA DE NAVEGACIÓN SUPERIOR -->
+    <nav class="barra-superior">
+        <div class="logo">
+            <img src="../img/logo2.webp" alt="Logo de WikiDesign" style="height: 40px; width: 180px; object-fit: fill;">
+        </div>
+        
+        <ul>
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#colabora">COLABORA</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+
+        <div class="buscador">
+            Buscar
+        </div>
+    </nav>
+
+    <!-- CABECERA PRINCIPAL (HERO) -->
+    <header id="inicio">
+        <h1>DISEÑO CENTRADO EN EL USUARIO</h1>
+        <p>Descubre qué es el Diseño Centrado en el Usuario (DCU) y por qué es el secreto detrás de los productos digitales que realmente amamos usar.</p>
+    </header>
+
+    <!-- CONTENEDOR PRINCIPAL A DOS COLUMNAS -->
+    <div class="contenedor-pagina">
+        
+        <!-- COLUMNA IZQUIERDA: MENÚ LATERAL DE NAVEGACIÓN -->
+        <aside class="menu-lateral">
+            <div class="bloque-temas">
+                <h4>TEMAS</h4>
+                <ul>
+                    <li><a href="#problema">INTRODUCCIÓN</a></li>
+                    <li><a href="#empatizar">EMPATIZAR</a></li>
+                    <li><a href="#definir">DEFINIR</a></li>
+                    <li><a href="#idear">IDEAR</a></li>
+                    <li><a href="#prototipar">PROTOTIPAR</a></li>
+                    <li><a href="#evaluar">EVALUAR</a></li>
+                </ul>
+            </div>
+
+            <div class="bloque-sumario">
+                <h4>SUMARIO</h4>
+                <p class="subtitulo-sumario">Experiencia de usuario - P1</p>
+                <ul>
+                    <li><a href="#sub1">SUB TEMA 1</a></li>
+                    <li><a href="#sub2">SUB TEMA 2</a></li>
+                    <li><a href="#sub3">SUB TEMA 3</a></li>
+                    <li><a href="#sub4">SUB TEMA 4</a></li>
+                    <li><a href="#sub5">SUB TEMA 5</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- COLUMNA DERECHA: CONTENIDO ESTRUCTURADO EN TARJETAS -->
+        <main class="contenido-derecho">
+            
+            <!-- TARJETA 1: INTRODUCCIÓN -->
+            <div id="problema" class="fila-tarjetas">
+                <div class="caja-texto">
+                    <h2>¿Alguna vez te has perdido en una página web?</h2>
+                    <p>Eso sucede cuando el diseño se basa en suposiciones, no en personas. El resultado es frustración, abandono y un producto que nadie quiere usar. Construir a ciegas e ignorar al usuario es el camino más rápido al fracaso digital.</p>
+                </div>
+				
+				<div class="caja-imagen">
+    <!-- Contenedor donde se dibujará la animación -->
+    <div id="animacion-confused" style="width: 100%; height: 250px;">&nbsp;</div>
+</div>
+
+<!-- Script que carga y reproduce el JSON automáticamente -->
+<script>
+    lottie.loadAnimation({
+        container: document.getElementById('animacion-confused'), // Se conecta con el div de arriba
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: 'media/Confused.json' // Ruta exacta de tu archivo
+    });
+</script>
+
+            </div>
+
+            <h2 style="margin-bottom: 25px;">Las 5 fases del DCU</h2>
+
+            <!-- TARJETA 2: EMPATIZAR -->
+            <div id="empatizar" class="fila-tarjetas">
+                <div class="caja-texto">
+                    <h3>Empatizar</h3>
+                    <p>Ponte en sus zapatos. Investiga a fondo quiénes son tus usuarios, qué necesitan en su día a día y qué obstáculos enfrentan antes de proponer cualquier solución.</p>
+                </div>
+                <div class="caja-imagen">
+                    <img src="../img/Imagen 1.png" alt="Fase Empatizar">
+                </div>
+            </div>
+
+            <!-- TARJETA 3: DEFINIR -->
+            <div id="definir" class="fila-tarjetas">
+                <div class="caja-texto">
+                    <h3>Definir</h3>
+                    <p>Encuentra el problema real. Filtra toda la información recolectada durante la investigación para plantear exactamente qué necesidades vas a resolver.</p>
+                </div>
+                <div class="caja-imagen">
+                    <img src="../img/Imagen 2.png" alt="Fase Definir">
+                </div>
+            </div>
+
+            <!-- TARJETA 4: IDEAR -->
+            <div id="idear" class="fila-tarjetas">
+                <div class="caja-texto">
+                    <h3>Idear</h3>
+                    <p>Imagina las soluciones. Es el momento de realizar lluvias de ideas sin filtros ni límites; en esta etapa ninguna propuesta creativa es mala.</p>
+                </div>
+                <div class="caja-imagen">
+                    <img src="../img/Imagen.jpg" alt="Fase Idear">
+                </div>
+            </div>
+
+            <!-- TARJETA 5: PROTOTIPAR -->
+            <div id="prototipar" class="fila-tarjetas">
+                <div class="caja-texto">
+                    <h3>Prototipar</h3>
+                    <p>Hazlo tangible. Crea versiones rápidas, económicas y de baja fidelidad de tus ideas principales para ver cómo funcionarían en la práctica.</p>
+                </div>
+                <div class="caja-imagen">
+                    <img src="../img/Imagen 1.png" alt="Fase Prototipar">
+                </div>
+            </div>
+
+            <!-- TARJETA 6: EVALUAR -->
+            <div id="evaluar" class="fila-tarjetas">
+                <div class="caja-texto">
+                    <h3>Evaluar</h3>
+                    <p>Prueba y aprende. Pon tu prototipo directamente en las manos de usuarios reales, observa en qué puntos se confunden y corrige errores a tiempo.</p>
+                </div>
+                <div class="caja-imagen">
+                    <img src="../img/Imagen 2.png" alt="Fase Evaluar">
+                </div>
+            </div>
+            
+            <!-- SECCIÓN DE INFORMACIÓN ADICIONAL -->
+            <aside class="importa">
+                <h2>¿Por qué te debe importar?</h2>
+                <p>Aplicar el DCU no es un requisito exclusivo para diseñadores. Es una mentalidad estratégica. Ya sea que estés creando un sitio web, un software o un negocio, poner al usuario en el centro te ahorra semanas de retrabajo y garantiza que tu esfuerzo construya algo que la gente realmente necesite.</p>
+            </aside>
+
+        </main>
+    </div>
+    
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>© 2026 Wiki Design. Todos los derechos reservados. El contenido de este sitio ha sido desarrollado con fines educativos y académicos.</p>
+    </footer>
+</body>
+</html>
